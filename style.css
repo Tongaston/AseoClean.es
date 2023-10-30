@@ -1,0 +1,556 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --back-body-color: #f9f5f5;
+    --aseoclean-color1: #2ca1dc;
+    --aseoclean-color2: #8dc933;
+    
+}
+
+body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: var(--back-body-color);
+    font-family: 'Poppins', sans-serif;
+}
+
+.top-divider {
+
+    position:fixed; top:0;
+    z-index: 3;
+    width: 100%;
+}
+
+/* navbar */
+
+.navbar {
+    position:fixed; top:0;
+    z-index: 5;
+}
+
+/* .img-fluid {
+    width: 150px;
+    margin-right: 30px;
+} */
+
+
+
+.navbar-brand {
+    color: var(--aseoclean-color1);
+    margin-left: 30px;
+    font-weight: 700;
+    font-size: 2rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-item {
+    font-size: 1.2rem;
+}
+
+.nav-link {
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-brand:hover {
+    color:#227fae;
+    text-shadow: -7px 5px 12px #1b6286;
+}
+
+.nav-link:hover {
+    font-weight: bold;
+    color: var(--aseoclean-color1);
+}
+
+/* main */
+
+main {
+    margin-top: 250px;
+}
+
+.foto-portada {
+    width: 600px;
+    /*max-height: 50%;
+    min-height: 20%; */
+    max-width: 100%; 
+    height: 400px;
+    border-radius:41% 59% 55% 45% / 30% 30% 70% 70%;
+    box-shadow:5px 1px 37px 23px var(--aseoclean-color2) ;
+}
+
+.inicio-container {
+    display: flex;
+    margin: 100px 40px 0 40px;
+    height: 70vh;
+    flex-direction: row;
+    
+}
+
+.presentacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--aseoclean-color1);
+    text-align: center;
+    padding: 40px;
+    margin-bottom: 0;
+    text-shadow: -2px 2px 10px var(--aseoclean-color1);
+}
+
+.parrafo-inicio {
+    font-size: 1.5rem;
+    margin-left: 15px;
+    padding: 0 10px;
+    text-align: center;
+}
+
+.links-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+}
+
+.links-container a{   
+    font-size: 2.5rem;
+    color: var(--aseoclean-color1);
+    transition: all 0.3s ease-in-out;
+    border-radius: 50%;
+}
+
+ .icon-container {
+    margin: 0 15px;
+    list-style: none;
+    border-radius: 50%;
+} 
+
+.links-container a:hover {
+    color: var(--aseoclean-color2);
+}
+
+
+/* Servicios */
+h2 {
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--aseoclean-color1);
+    text-align: center;
+    padding: 40px;
+    margin-bottom: 40px;
+    text-shadow: -2px 2px 10px var(--aseoclean-color1);
+}
+
+.servicios {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 4px;
+    padding: 40px;
+ }
+
+ .tarjeta img {
+    max-height: 12rem;
+ }
+
+
+
+ .parrafo-somos {
+    font-size: 1.5rem;
+    margin: 50px;
+    text-align: center;
+ }
+
+ .parrafo-contacto {
+    font-size: 1.5rem;
+    margin: 10px 50px 50px 50px;
+    text-align: center;
+ }
+
+ .tarjeta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ }
+/* Carrousel */
+
+.comentario {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.container h2 {
+    margin-bottom: 0;
+}
+
+.carousel-container {
+    padding: 40px 40px 80px 40px;
+}
+
+.carousel-container .carousel {
+    max-width: 800px;
+}
+
+.carousel-item {
+    height: 500px;
+}
+
+.carousel-item .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonio-imagen {
+    height: 150px;
+    width: 150px;
+    margin: 10px 10px 20px 10px ;
+}
+
+.testimonio-texto {
+    max-width: 70%;
+    font-size: 20px;
+    text-align: center;
+    font-style: italic;
+}
+
+.testimonio-info {
+    font-weight: bold;
+    text-align: center;
+}
+
+.testimonio-info p {
+    margin-bottom: 0;
+}
+
+.testimonio-footer .cliente {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+
+
+ 
+/* Contacto */
+ .contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+ }
+
+ .bottom-divider {
+    width: 100vw;
+ }
+
+ footer h2 {
+    margin-bottom: 0;
+ }
+
+ .colophon {
+    color: lightgray;
+ }
+
+/* Whatsapp */
+.container-boton{
+    background-color: #2e6329;
+    border: 1px solid #fff;
+    position: fixed;
+    z-index: 999;
+    border-radius: 50%;
+    bottom: 20px;
+    right: 25px;
+    padding: 25px;
+    transition: ease 0.3s;
+    animation: efecto 1.2s infinite;
+}
+
+.container-boton:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.boton{
+    width: 50px;
+    transition: ease 1s;
+}
+
+@keyframes efecto{
+    0%{
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.85);
+    }
+    100%{
+        box-shadow: 0 0 0 25px rgba(0, 0, 0, 0);
+    }
+}
+
+
+
+ /* Media Querys */
+
+
+ @media screen and (max-width: 1020px) {
+    .inicio-container {
+        margin-top: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 60vh;
+        }
+
+    h1 {
+        font-size: 2rem;
+    }
+    .parrafo-inicio {
+        font-size: 1rem;
+    }
+    .foto-portada {
+        max-height: 40%;
+    }
+
+    .inicio-container {
+        
+        height: 60vh;
+        
+        
+    }
+
+    .links-container {
+        margin-top: 50px;
+    }
+    
+    .links-container a{   
+        font-size: 2rem;
+        
+    }
+
+    h2 {
+        font-size: 2.5rem;
+        
+    }
+
+    .parrafo-somos {
+        font-size: 1rem;
+        margin: 0 30px 30px 30px;
+        
+     }
+    
+     .parrafo-contacto {
+        font-size: 1rem;
+        margin: 10px 50px 50px 50px;
+        
+     }
+
+     .colophon {
+        font-size: 0.7rem;
+     }
+ }
+
+@media screen and (max-width: 600px) {
+    .collapse {
+        background-color: #8dc93379;
+        border-radius: 10px;
+    }
+    
+    .collapse li {
+        margin-left: 10px;
+    }
+
+.logo {
+    width: 100px;
+}
+
+ h1 {
+    font-size: 1.7rem;
+}
+.parrafo-inicio {
+    font-size: 0.7rem;
+}
+.foto-portada {
+    max-height: 50%;
+    max-width: 70%;
+    
+}
+
+.inicio-container {
+margin-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 60vh;
+}
+
+.links-container a{   
+    font-size: 1.7rem;
+    
+}
+
+.tarjeta {
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.7rem;
+    
+}
+
+.parrafo-somos {
+    font-size: 0.7rem;
+    margin: 0 30px 30px 30px;
+    
+ }
+
+ .testimonio-texto {
+    font-size: 16px;
+}
+
+ h3 {
+    font-size: 1rem;
+ }
+
+ .parrafo-contacto {
+    font-size: 0.7rem;
+    margin: 0px 50px 0px 50px;
+    
+ }
+
+ .colophon {
+    font-size: 0.7rem;
+ }
+
+ .boton {
+    width: 40px;
+ }
+
+ .container-boton {
+    padding: 20px;
+ }
+}
+
+
+@media screen and (max-width: 450px) {
+    .logo {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 400px) {
+   
+    .foto-portada {
+        height: 150px;
+    }
+    .logo {
+        display: none;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+        padding: 20px;
+        margin-top: 40px;
+    }
+    .parrafo-inicio {
+        font-size: 0.7rem;
+    }
+    .foto-portada {
+        max-height: 50%;
+        max-width: 70%;
+    }
+    
+.collapse {
+    background-color: #8dc93379;
+    border-radius: 10px;
+}
+
+.collapse li {
+    margin-left: 10px;
+}
+
+    main {
+        margin-top: 150px;
+    }
+    .inicio-container {
+    margin: 0 10px 0 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 60vh;
+    }
+    
+    .links-container a{   
+        font-size: 1rem;
+    }
+    
+    h2 {
+        font-size: 1rem;
+        margin-bottom: 0;
+    }
+
+    
+    .servicios {
+        padding: 10px;
+     }
+
+     .card-text {
+        font-size: 0.7rem;
+     }
+    
+    .parrafo-somos {
+        font-size: 0.7rem;
+        margin: 0 30px 30px 30px;  
+     }
+    
+     h3 {
+        font-size: 0.8rem;
+     }
+    
+     .parrafo-contacto {
+        font-size: 0.7rem;
+        margin: 0px 30px 0px 30px; 
+     }
+
+     .contacto ul {
+        padding: 0;
+     }
+    
+     .colophon {
+        font-size: 0.5rem;
+     }
+    
+    .testimonio-imagen {
+        height: 100px;
+        width: 100px;
+    }
+    
+    .testimonio-texto {
+        max-width: 70%;
+        font-size: 14px;
+    }
+    
+    .testimonio-footer .cliente {
+        font-size: 1rem;
+    }
+
+    .boton {
+        width: 30px;
+     }
+    
+     .container-boton {
+        padding: 10px;
+     }
+}
+ 
